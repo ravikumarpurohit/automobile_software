@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+  font-size: 12px;
+}
+.app {
+  display: flex;
+  position: relative;
+}
+#root,
+.app {
+  height: 100%;
+}
+
+.app main {
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.app main header {
+  background: #ffffff;
+  padding: 2px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.btn-nav {
+  width: 100px;
+}
+
+table {
+  width: 100%;
+}
+
+.thead-scroll tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tbody-scroll {
+  display: block;
+  overflow-y: scroll;
+  table-layout: fixed;
+  max-height: calc(100vh - 200px);
+}
+
+.tbody-scroll tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.alert_popup {
+  position: absolute;
+  right: 5px;
+  z-index: 99999;
+}
+
+.curve-box-red {
+  height: 65px;
+  border-bottom-left-radius: 100% 500px;
+  background-color: rgb(231, 6, 6);
+  font-size: 10px;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.curve-box-black {
+  background-color: black;
+}
+
+.curve-box-black-c{
+  background-color: black;
+  border-bottom-right-radius: 100% 500px;
+}
+
+.no-npmp {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+/* thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tbody {
+  display: block;
+  overflow-y: scroll;
+  table-layout: fixed;
+  max-height: calc(100vh - 200px);
+} */
